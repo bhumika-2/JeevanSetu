@@ -1,3 +1,6 @@
+## Contributors
+
+Anchal - Development / Project Contribution
 # JeevanSetu — AI-Enabled Healthcare Assistance Platform & Government Scheme Navigator
 
 JeevanSetu ("bridge to life") is a responsive React + Vite frontend that brings together
