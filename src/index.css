@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background-color: #F5A524;
+    color: #052220;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #A6D9CF transparent;
+  }
+  *:focus-visible {
+    outline: 2px solid #0F6B62;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-teal-100/70;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-teal-500 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-teal-600 active:bg-teal-700 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-teal-50 px-4 py-2.5 text-sm font-semibold text-teal-700 transition-colors hover:bg-teal-100;
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-saffron-500 px-4 py-2.5 text-sm font-semibold text-indigo-900 transition-colors hover:bg-saffron-400;
+  }
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-teal-100 bg-teal-50 px-3 py-1 text-xs font-medium text-teal-700;
+  }
+  .input {
+    @apply w-full rounded-xl border border-teal-100 bg-white px-3.5 py-2.5 text-sm text-ink placeholder:text-ink/40 outline-none transition focus:border-teal-400 focus:ring-2 focus:ring-teal-100;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
