@@ -4,7 +4,7 @@ import SectionHeader from '../components/common/SectionHeader.jsx'
 import Badge from '../components/common/Badge.jsx'
 import { bloodRequests, donorStats, user } from '../data/mockData.js'
 
-const groups = ['All', 'O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-']
+const groups = ['O+', 'O-', 'A+', 'A-', 'B+', 'B-', 'AB+', 'AB-']
 
 export default function BloodConnect() {
   const [group, setGroup] = useState('All')

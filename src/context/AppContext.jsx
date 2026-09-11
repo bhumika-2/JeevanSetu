@@ -9,7 +9,8 @@ export const LANGUAGES = [
   { code: 'bn', label: 'Bengali', native: 'বাংলা' },
   { code: 'ta', label: 'Tamil', native: 'தமிழ்' },
   { code: 'te', label: 'Telugu', native: 'తెలుగు' },
-  { code: 'mr', label: 'Marathi', native: 'मराठी' }
+  { code: 'mr', label: 'Marathi', native: 'मराठी' },
+  { code: 'mr', label: 'Garhwali',native: 'hehe'},
 ]
 
 export function AppProvider({ children }) {
